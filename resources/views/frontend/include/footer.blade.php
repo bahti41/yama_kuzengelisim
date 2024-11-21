@@ -11,7 +11,7 @@ $footer = App\Models\Footer::find(1);
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section__title">
-                        <span class="sub-title">Merhaba Deyin</span>
+                        <span class="sub-title">Merhaba</span>
                         <h2 class="title">Herhangi bir sorunuz var mı? <br> İletişime geçmekten çekinmeyin</h2>
                     </div>
                     <div class="homeContact__content">
