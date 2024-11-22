@@ -18,7 +18,7 @@ $coklu = App\Models\Cokluresim::all();
             <div class="col-lg-6">
                 <div class="about__content">
                     <div class="section__title">
-                        <span class="sub-title">01 - Hakkımızda</span>
+                        <span class="sub-title">Hakkımızda</span>
                         <h2 class="title">{{$hakkimizda->baslik}}</h2>
                     </div>
                     <div class="about__exp">

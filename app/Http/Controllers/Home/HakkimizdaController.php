@@ -43,7 +43,7 @@ class HakkimizdaController extends Controller
             Hakkimizda::findOrFail($hakkimizda_id)->update(
                 [
                     'baslik' => $request->baslik,
-                    'kisa_baslik' => $request->kisa_baslik,
+                    'anahtar' => $request->anahtar,
                     'kisa_aciklama' => $request->kisa_aciklama,
                     'aciklama' => $request->aciklama,
                     'resim' => $resim_kaydet,
@@ -67,7 +67,7 @@ class HakkimizdaController extends Controller
             Hakkimizda::findOrFail($hakkimizda_id)->update(
                 [
                     'baslik' => $request->baslik,
-                    'kisa_baslik' => $request->kisa_baslik,
+                    'anahtar' => $request->anahtar,
                     'kisa_aciklama' => $request->kisa_aciklama,
                     'aciklama' => $request->aciklama,
                 ]

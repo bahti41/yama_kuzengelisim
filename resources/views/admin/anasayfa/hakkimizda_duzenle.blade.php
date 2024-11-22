@@ -31,16 +31,6 @@
                             </div>
                             <!-- Başlık -->
 
-                            <!-- kısa_Başlık -->
-                            <div class="row mb-3">
-
-                                <label for="example-text-input" class="col-sm-2 col-form-label">Kısa Başlık</label>
-                                <div class="col-sm-10">
-                                    <input class="form-control" name="kisa_baslik" type="text" placeholder="Kısa Başlık Giriniz..." id="example-text-input" value="{{$hakkimizda->kisa_baslik}}">
-                                </div>
-                            </div>
-                            <!-- kısa_Başlık -->
-
 
                             <!-- kısa_acıklama -->
                             <div class="row mb-3">
@@ -53,12 +43,23 @@
                             <!-- kısa_acıklama -->
 
 
+                            <!-- Anahtar -->
+                            <div class="row mb-3">
+
+                                <label for="example-text-input" class="col-sm-2 col-form-label">Anahtar</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" name="anahtar" type="text" placeholder="Kısa Başlık Giriniz..." id="example-text-input" value="{{$hakkimizda->anahtar}}">
+                                </div>
+                            </div>
+                            <!-- Anahtar -->
+
+
                             <!--acıklama -->
                             <div class="row mb-3">
 
                                 <label for="example-text-input" class="col-sm-2 col-form-label">Acıklama</label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" id="elm1" name="aciklama" type="text" placeholder="Acıklama Giriniz..." id="example-text-input">{{$hakkimizda->aciklama}}</textarea>
+                                    <input class="form-control" name="aciklama" type="text" placeholder="Acıklama Giriniz..." id="example-text-input" value="{{$hakkimizda->aciklama}}">
                                 </div>
                             </div>
                             <!--acıklama -->
