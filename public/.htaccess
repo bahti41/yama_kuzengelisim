@@ -21,6 +21,22 @@
 </IfModule>
 
 
+ <Files xmlrpc.php>
+     Order Deny,Allow
+     Deny from all
+ </Files>
+
+ <FilesMatch "\.(php|sql|ini|log|sh|bat|htaccess)$">
+     Order Allow,Deny
+     Deny from all
+ </FilesMatch>
+
+ <Directory /var/www/html/private>
+     Order Allow,Deny
+     Deny from all
+ </Directory>
+
+
  ErrorDocument 404 /errors/404
  ErrorDocument 403 /errors/403
  ErrorDocument 500 /errors/500
