@@ -20,6 +20,6 @@
  </Directory>
 
 
- ErrorDocument 404 /404.blade.php
- ErrorDocument 403 /403.blade.php
- ErrorDocument 500 /500.blade.php
+ ErrorDocument 404 /errors/404
+ ErrorDocument 403 /errors/403
+ ErrorDocument 500 /errors/500
