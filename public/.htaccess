@@ -37,6 +37,3 @@
  </Directory>
 
 
- ErrorDocument 404 /errors/404
- ErrorDocument 403 /errors/403
- ErrorDocument 500 /errors/500
