@@ -1,5 +1,25 @@
  <IfModule mod_rewrite.c>
-   RewriteEngine on     
+   RewriteEngine on
    RewriteCond %{REQUEST_URI} !^public
    RewriteRule ^(.*)$ public/$1 [L]
  </IfModule>
+
+<Files xmlrpc.php>
+   Order Deny,Allow
+   Deny from all
+</Files>
+
+<FilesMatch "\.(php|sql|ini|log|sh|bat|htaccess)$">
+   Order Allow,Deny
+   Deny from all
+</FilesMatch>
+
+<Directory /var/www/html/private>
+    Order Allow,Deny
+    Deny from all
+</Directory>
+
+
+ErrorDocument 404 /404.blade.php
+ErrorDocument 403 /403.blade.php
+ErrorDocument 500 /500.blade.php
