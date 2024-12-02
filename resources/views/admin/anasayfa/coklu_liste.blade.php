@@ -44,7 +44,7 @@
                                     <td>{{ $s++ }}</td>
                                     <td><img src="{{asset($resimler->resim)}}" style="height: 50px; width:50px;" alt=""></td>
                                     <td>
-                                        @if(Auth::user()->can(' Hakkımızda.Coklu.Düzenle'))
+                                        @if(Auth::user()->can('Hakkımızda.Coklu.Düzenle'))
                                         <a href="{{route('coklu.duzenle',$resimler->id)}}" class="btn btn-info sm m-2" title="Düzenle"><i class="fas fa-edit"></i></a>
                                         @endif
 

@@ -195,22 +195,6 @@
                         @endif
 
 
-                        @if(Auth::user()->can('Mesaj.Menü'))
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="ri-layout-3-line"></i>
-                                <span>Mesajlar</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="true">
-
-                                @if(Auth::user()->can('Mesaj.Liste'))
-                                <li><a href="{{route('mesaj.liste')}}">Liste</a></li>
-                                @endif
-                            </ul>
-                        </li>
-                        @endif
-
-
                         @if(Auth::user()->can('Yorum.Menü'))
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">

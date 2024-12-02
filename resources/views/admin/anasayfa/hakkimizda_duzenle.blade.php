@@ -31,27 +31,26 @@
                             </div>
                             <!-- Başlık -->
 
+                            <!-- kısa_Başlık -->
+                            <div class="row mb-3">
+
+                                <label for="example-text-input" class="col-sm-2 col-form-label">Kısa Başlık</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" name="kisa_baslik" type="text" placeholder="Kısa Başlık Giriniz..." id="example-text-input" value="{{$hakkimizda->kisa_baslik}}">
+                                </div>
+                            </div>
+                            <!-- kısa_Başlık -->
+
 
                             <!-- kısa_acıklama -->
                             <div class="row mb-3">
 
                                 <label for="example-text-input" class="col-sm-2 col-form-label">kısa Acıklama</label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" id="elm1" name="kisa_aciklama" type="text" placeholder="Kısa Acıklama Giriniz..." id="example-text-input" rows="4">{{$hakkimizda->kisa_aciklama}}</textarea>
+                                    <textarea class="form-control" name="kisa_aciklama" type="text" placeholder="Kısa Acıklama Giriniz..." id="example-text-input" rows="4">{{$hakkimizda->kisa_aciklama}}</textarea>
                                 </div>
                             </div>
                             <!-- kısa_acıklama -->
-
-
-                            <!-- Anahtar -->
-                            <div class="row mb-3">
-
-                                <label for="example-text-input" class="col-sm-2 col-form-label">Anahtar</label>
-                                <div class="col-sm-10">
-                                    <input class="form-control" name="anahtar" type="text" placeholder="Kısa Başlık Giriniz..." id="example-text-input" value="{{$hakkimizda->anahtar}}">
-                                </div>
-                            </div>
-                            <!-- Anahtar -->
 
 
                             <!--acıklama -->
@@ -59,7 +58,7 @@
 
                                 <label for="example-text-input" class="col-sm-2 col-form-label">Acıklama</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" name="aciklama" type="text" placeholder="Acıklama Giriniz..." id="example-text-input" value="{{$hakkimizda->aciklama}}">
+                                    <textarea class="form-control" id="elm1" name="aciklama" type="text" placeholder="Acıklama Giriniz..." id="example-text-input">{{$hakkimizda->aciklama}}</textarea>
                                 </div>
                             </div>
                             <!--acıklama -->

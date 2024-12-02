@@ -27,6 +27,6 @@ class MailGonder extends Mailable
 
     public function build()
     {
-        return $this->subject('Teklif Formu ' . $this->data->konu)->view('frontend.mesaj.mail_sablon');
+        return $this->subject('Teklif Formu' . $this->data->konu)->view('frontend.mesaj.mail_sablon');
     }
 }

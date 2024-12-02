@@ -18,7 +18,7 @@ $coklu = App\Models\Cokluresim::all();
             <div class="col-lg-6">
                 <div class="about__content">
                     <div class="section__title">
-                        <span class="sub-title">Hakkımızda</span>
+                        <span class="sub-title">01 - Hakkımızda</span>
                         <h2 class="title">{{$hakkimizda->baslik}}</h2>
                     </div>
                     <div class="about__exp">
@@ -29,7 +29,7 @@ $coklu = App\Models\Cokluresim::all();
                             <p>{{$hakkimizda->kisa_baslik}}</p>
                         </div>
                     </div>
-                    <p class="desc">{!!$hakkimizda->kisa_aciklama!!}</p>
+                    <p class="desc">{{$hakkimizda->kisa_aciklama}}</p>
                     <a href="{{route('anasayfa.hak')}}" class="btn">Devamı...</a>
                 </div>
             </div>

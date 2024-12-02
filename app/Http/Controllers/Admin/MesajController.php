@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Exports\QuoteExport;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Mesaj;
 use Illuminate\Support\Carbon;
-use Maatwebsite\Excel\Facades\Excel;
+
 
 class MesajController extends Controller
 {
@@ -30,7 +29,7 @@ class MesajController extends Controller
             'email.required' => 'Mail Boş Olamaz...',
             'email.email' => 'E-mail Email Formatında Olmalıdr...',
             'telefon.required' => 'Telefon Boş Olamaz...',
-            'telefon.digits' => 'Telefon Numarası Boşluksuz 11 Karakter olmalıdır...',
+            'telefon.digits' => 'Telofo  Numarası Boşluksuz 11 Karakter olmalıdır...',
             'konu.required' => 'Konu Boş Olamaz...',
             'mesaj.required' => 'Mesaj Boş Olamaz...'
         ]);
@@ -42,20 +41,5 @@ class MesajController extends Controller
             'alert-type' => 'success'
         );
         return Redirect()->back()->with($mesaj);
-    }
-
-
-    public function MesajListe()
-    {
-        $mesajliste = Mesaj::latest()->get(); //latest Eklenen ürünün en son ekleneni en başa alır
-
-        return view('admin.mesajlar.mesajlar_hepsi', compact('mesajliste'));
-    }
-
-
-
-    public function ExportExcel()
-    {
-        return Excel::download(new QuoteExport, 'teklifler.xlsx');
     }
 }
