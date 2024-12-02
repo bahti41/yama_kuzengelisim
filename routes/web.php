@@ -208,7 +208,11 @@ Route::middleware('auth')->group(function () {
         Route::get('/kullanici/rol/sil/{id}', 'KullanicilSil')->name('kullanici.sil')->middleware('permission:Kullanici.sil');
     });
 
-
+    // Rol Route
+    Route::controller(MesajController::class)->group(function () {
+        Route::get('/mesaj/liste', 'MesajListe')->name('mesaj.liste')->middleware('permission:Mesaj.Liste');
+        Route::get('/export-excel', 'ExportExcel')->name('export.excel');
+    });
 
 
 

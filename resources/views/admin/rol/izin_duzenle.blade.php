@@ -35,9 +35,10 @@
                                 <label for="example-text-input" class="col-sm-2 col-form-label">Grup Adı</label>
                                 <div class="col-sm-10 form-group">
                                     <select class="form-select" aria-label="default select example" name="grup_adi">
-                                        <option value="banner" {{$izinler->grup_adi == 'rolizin' ? 'selected' : ''}}>RolIzin</option>
-                                        <option value="banner" {{$izinler->grup_adi == 'yetkiler' ? 'selected' : ''}}>Yetkiler</option>
-                                        <option value="banner" {{$izinler->grup_adi == 'kullanicilar' ? 'selected' : ''}}>Kullanıcılar</option>
+                                        <option value="rolizin" {{$izinler->grup_adi == 'rolizin' ? 'selected' : ''}}>RolIzin</option>
+                                        <option value="yetkiler" {{$izinler->grup_adi == 'yetkiler' ? 'selected' : ''}}>Yetkiler</option>
+                                        <option value="kullanicilar" {{$izinler->grup_adi == 'kullanicilar' ? 'selected' : ''}}>Kullanıcılar</option>
+                                        <option value="mesajlar" {{$izinler->grup_adi == 'Mesajlar' ? 'selected' : ''}}>Mesajlar</option>
 
                                         <option value="banner" {{$izinler->grup_adi == 'banner' ? 'selected' : ''}}>Banner</option>
                                         <option value="hakkimizda" {{$izinler->grup_adi == 'hakkimizda' ? 'selected' : ''}}>Hakkımızda</option>

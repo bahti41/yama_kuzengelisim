@@ -37,6 +37,7 @@
                                         <option value="rolizin">Rol & İzin</option>
                                         <option value="yetkiler">Yetkiler</option>
                                         <option value="kullanicilar">Kullanıcılar</option>
+                                        <option value="mesajlar">Mesajlar</option>
 
                                         <option value="banner">Banner</option>
                                         <option value="hakkimizda">Hakkımızda</option>

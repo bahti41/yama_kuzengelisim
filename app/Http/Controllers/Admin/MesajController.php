@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Exports\QuoteExport;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Mesaj;
 use Illuminate\Support\Carbon;
-
+use Maatwebsite\Excel\Facades\Excel;
 
 class MesajController extends Controller
 {
@@ -41,5 +42,20 @@ class MesajController extends Controller
             'alert-type' => 'success'
         );
         return Redirect()->back()->with($mesaj);
+    }
+
+
+    public function MesajListe()
+    {
+        $mesajliste = Mesaj::latest()->get(); //latest Eklenen ürünün en son ekleneni en başa alır
+
+        return view('admin.mesajlar.mesajlar_hepsi', compact('mesajliste'));
+    }
+
+
+
+    public function ExportExcel()
+    {
+        return Excel::download(new QuoteExport, 'teklifler.xlsx');
     }
 }
